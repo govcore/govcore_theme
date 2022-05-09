@@ -1,4 +1,4 @@
-## Govcore Administration Theme
+# Govcore Administration Theme
 
 [![](images/govcore-md.jpg)](https://www.drupal.org/project/govcore)
 
