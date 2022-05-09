@@ -1,0 +1,32 @@
+{
+  "name": "govcore/govcore_theme",
+  "description": "A multipurpose utility theme for the GovCore distribution.",
+  "type": "drupal-theme",
+  "homepage": "https://www.drupal.org/project/govcore_theme",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Clarity Partners",
+      "homepage": "https://www.claritypartners.com",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "http://drupal.org/project/issues/govthem",
+    "source": "http://cgit.drupalcode.org/govcore_theme"
+  },
+  "repositories": {
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    "govcore": {
+      "type": "vcs",
+      "url": "https://github.com/govcore/govcore_theme.git"
+    }
+  },
+  "require": {
+    "drupal/core": "^8 || ~9.0"
+  }
+}
