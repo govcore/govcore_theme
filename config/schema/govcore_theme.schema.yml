@@ -1,0 +1,5 @@
+# Schema for the configuration files of the govcore_theme theme.
+
+govcore_theme.settings:
+  type: theme_settings
+  label: 'govcore_theme settings'
