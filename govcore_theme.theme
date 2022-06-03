@@ -33,17 +33,23 @@ function govcore_theme_preprocess_install_page(&$variables) {
   // during the installer use the $install_state global.
   global $install_state;
   $profile_name = 'govcore';
+  $theme_name = 'govcore_theme';
+
   // If the profile has been selected return it.
   if (isset($install_state['parameters']['profile'])) {
     $profile_name = $install_state['parameters']['profile'];
   }
 
   $current_profile_path = drupal_get_path('profile', $profile_name);
+  $current_theme_path = drupal_get_path('theme', $theme_name);
+
   // Profile logo.
-  if (file_exists($current_profile_path . '/images/' . $profile_name . '-logo.png')) {
-    $variables['profile_logo'] = base_path() . $current_profile_path . '/images/' . $profile_name . '-logo.png';
+  if (file_exists($current_profile_path . '/' . $profile_name . '-logo.png')) {
+    $variables['profile_logo'] = base_path() . $current_profile_path . '/' . $profile_name . '-logo.png';
+  } elseif (file_exists($current_theme_path . '/images/' . $profile_name . '-logo.png')) {
+    $variables['profile_logo'] = base_path() . $current_theme_path . '/images/' . $profile_name . '-logo.png';
   }
 
   // Attach install page library.
-  $variables['#attached']['library'][] = $profile_name . '/install_page';
+  $variables['#attached']['library'][] = $profile_name . '/install-page';
 }

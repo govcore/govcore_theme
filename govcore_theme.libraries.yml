@@ -14,3 +14,8 @@ global-admin-styling-rtl:
 global-admin-scripts:
   js:
     js/govcore_theme.script.js: {}
+# Global admin right to left styling.
+install-page:
+  css:
+    theme:
+      css/govcore_theme.style-rtl.css: {}
