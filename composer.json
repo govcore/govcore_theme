@@ -13,7 +13,7 @@
     }
   ],
   "support": {
-    "issues": "http://drupal.org/project/issues/govthem",
+    "issues": "http://drupal.org/project/issues/govtheme",
     "source": "http://cgit.drupalcode.org/govcore_theme"
   },
   "repositories": {
@@ -27,6 +27,6 @@
     }
   },
   "require": {
-    "drupal/core": "^8 || ~9.0"
+    "drupal/core": "^9 || ^10"
   }
 }
